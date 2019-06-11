@@ -4,6 +4,7 @@ module.exports = function (sequelize, DataTypes) {
       // Properties
       type: DataTypes.INTEGER,
       // Flags
+      primaryKey: true,
       allowNull: false,
       // Validations
       validate: {

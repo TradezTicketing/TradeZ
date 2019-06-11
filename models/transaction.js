@@ -1,6 +1,13 @@
 module.exports = function(sequelize, DataTypes) {
   var Transaction = sequelize.define("Transaction", {
-    id: DataTypes.INTEGER,
+    id: {
+      // Properties
+      type: DataTypes.INTEGER,
+      // Flags
+      primaryKey: true,
+      allowNull: false,
+      },
+    
     offer: DataTypes.BOOLEAN,
     quantity: DataTypes.INTEGER   
   });
