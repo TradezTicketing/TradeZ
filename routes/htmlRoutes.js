@@ -7,9 +7,9 @@ module.exports = function(app) {
     res.sendFile(path.join(_dirname, "../html/index.html"));
   });
 
-  // Load Sign Up/Account Page
-  app.get("/accounts", function(req, res) {
-    res.sendFile(path.join(_dirname, "../html/signup.html"));
+  // Load Sign Up
+  app.get("/signup", function(req, res) {
+    res.sendFile(path.join(__dirname, "../html/signup.html"));
   });
 
   // Load Sign Up/Account Page
