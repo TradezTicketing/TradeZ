@@ -77,6 +77,7 @@ module.exports = function (sequelize, DataTypes) {
       type: DataTypes.STRING,
 
       // Flags
+      primaryKey: true,
       allowNull: false,
       // Validations
       validate: {

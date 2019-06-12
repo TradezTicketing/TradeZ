@@ -3,7 +3,6 @@ module.exports = function (sequelize, DataTypes) {
     id: {
       // Properties
       type: DataTypes.INTEGER,
-
       // Flags
       allowNull: false,
       // Validations
