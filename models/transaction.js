@@ -3,23 +3,10 @@ module.exports = function (sequelize, DataTypes) {
     id: {
       // Properties
       type: DataTypes.INTEGER,
-<<<<<<< HEAD
       // Flags
       primaryKey: true,
       allowNull: false,
       },
-    
-    offer: DataTypes.BOOLEAN,
-    quantity: DataTypes.INTEGER   
-=======
-
-      // Flags
-      allowNull: false,
-      // Validations
-      validate: {
-
-      }
-    },
     offer: {
       // Properties
       // Boolean for labeling as a looking for or an offer aka something they have.
@@ -44,7 +31,6 @@ module.exports = function (sequelize, DataTypes) {
 
       }
     },
->>>>>>> 38cdd5c39afd2bfea8a02303220bce1dfd61d10a
   });
 
   Transaction.associate = function (models) {
