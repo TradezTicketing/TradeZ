@@ -1,17 +1,5 @@
 module.exports = function (sequelize, DataTypes) {
   var Account = sequelize.define("Account", {
-    id: {
-      // Properties
-      type: DataTypes.INTEGER,
-
-      // Flags
-      allowNull: false,
-      // Validations
-      validate: {
-
-      }
-    },
-
     username: {
       // Properties
       type: DataTypes.STRING,

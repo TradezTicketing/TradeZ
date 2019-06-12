@@ -1,15 +1,5 @@
 module.exports = function (sequelize, DataTypes) {
   var Transaction = sequelize.define("Transaction", {
-    id: {
-      // Properties
-      type: DataTypes.INTEGER,
-      // Flags
-      allowNull: false,
-      // Validations
-      validate: {
-
-      }
-    },
     offer: {
       // Properties
       // Boolean for labeling as a looking for or an offer aka something they have.
