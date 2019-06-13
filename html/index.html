@@ -5,41 +5,67 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="icon" type="img/png" href="../public/images/Screen Shot 2019-06-12 at 11.17.26 AM.png" />
     <link rel="stylesheet" type="text/css" href="../public/styles/styles.css">
-    <title>Document</title>
+    <title>TradeZ</title>
 </head>
 
 <body>
 
-    <nav class="navbar navbar-dark bg-dark">
-        <a class="navbar-brand" href="#">TradeZ</a>
-        <div class="collapse navbar-collapse" id="navbarText">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Features</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Pricing</a>
-                </li>
-            </ul>
+    <nav class="navbar navbar-dark bg-info">
+            <a class="navbar-brand" href="#"><img class="logo" src="../public/images/Screen Shot 2019-06-12 at 11.17.26 AM.png"
+                class="img-responsive logo"></a>
+        <div>
+        <button type="submit" class= "btn btn-light btn-sm">Log In/Sign Up</button>
+        <button type="submit" class= "btn btn-light btn-sm"><link rel="stylesheet" href="./search.html">Search</button>
+        <button type="submit" class= "btn btn-light btn-sm"><link rel="stylesheet" href="./signup.html">Account</button>
         </div>
     </nav>
 
-    <section class="slideshow">
-        <div class="content">
-            <h1 class="display-4">WELCOME!</h1>
-            <div class="content-carrousel">
-                <figure class="shadow"><img src="../public/images/Carousel Images/couple.jpg"></figure>
-                <figure class="shadow"><img src="../public/images/Carousel Images/ferriswheel.jpg"></figure>
-                <figure class="shadow"><img src="../public/images/Carousel Images/ferriswheel2.jpg"></figure>
-                <figure class="shadow"><img src="../public/images/Carousel Images/merrygoround.jpg"></figure>
-                <figure class="shadow"><img src="../public/images/Carousel Images/skyswings.jpg"></figure>
-            </div>
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <h1 class="display-4">Welcome!</h1>
+            <p class="lead">This is a website for...</p>
+            <div class="slider">
+                    <figure>
+                            <img src="../public/images/Carousel Images/merrygoround.jpg">
+                            <img src="../public/images/Carousel Images/couple.jpg">
+                            <img src="../public/images/Carousel Images/ferriswheel.jpg">
+                            <img src="../public/images/Carousel Images/skyswings.jpg">
+                            <img src="../public/images/Carousel Images/ferriswheel2.jpg">
+                    </figure>
+                </div>
+    
+                <!-- <a href="https://attractionshare.showare.com/"
+                        class="btn btn-success btn-sm active" role="button" aria-pressed="true">AttractionShare</a> -->
+           
         </div>
-        <div class="card" style="width: 18rem;">
+    </div>
+
+    <br><br>
+
+    <script>
+        var myIndex = 0;
+        carousel();
+
+        function carousel() {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            myIndex++;
+            if (myIndex > x.length) {
+                myIndex = 1
+            }
+            x[myIndex - 1].style.display = "block";
+            setTimeout(carousel, 2500);
+        }
+    </script>
+
+    <div class="card-group">
+        <div class="card">
+
             <div class="card-body">
                 <a href="/signup"  class="btn btn-dark btn-sm">Get
                         Started!</a>
@@ -50,25 +76,43 @@
                     aria-pressed="true">Attractionshare</a>
             </div>
         </div>
-    </section>
     </div>
+    <div class="card">
 
-    <br><br>
+        <div class="card-body">
+            <h5 class="card-title">What I Want</h5>
+            <p class="card-text">Choose the tickets you want.</p>
+            <div class="btn-group dropright">
+                <button type="button" class="btn btn-light dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+                    aria-expanded="false">
+                    I Want..
+                </button>
+                <div class="dropdown-menu">
+                    Dropdown menu links
+                </div>
 
+                <div class="col-sm-4">
+                    <button type="submit" class="btn btn-light btn-lg">GO</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- 
     <div class="container">
         <div class="row">
             <div class="col-sm-4">
                 <div class="card">
                     <div class="card-body">
-                        <h5 class="card-title">What I have</h5>
+                        <h5 class="card-title">What I Have</h5>
                         <p class="card-text">Choose the tickets you have to trade.</p>
                         <div class="btn-group dropright">
-                            <button type="button" class="btn btn-dark dropdown-toggle" data-toggle="dropdown"
+                            <button type="button" class="btn btn-light dropdown-toggle" data-toggle="dropdown"
                                 aria-haspopup="true" aria-expanded="false">
                                 I Have..
                             </button>
                             <div class="dropdown-menu">
-                                <!-- Dropdown menu links -->
+                                 Dropdown menu links
                             </div>
                         </div>
                     </div>
@@ -81,12 +125,12 @@
                         <h5 class="card-title">What I Want</h5>
                         <p class="card-text">Choose the tickets you want.</p>
                         <div class="btn-group dropright">
-                            <button type="button" class="btn btn-dark dropdown-toggle" data-toggle="dropdown"
+                            <button type="button" class="btn btn-light dropdown-toggle" data-toggle="dropdown"
                                 aria-haspopup="true" aria-expanded="false">
                                 I Want..
                             </button>
                             <div class="dropdown-menu">
-                                <!-- Dropdown menu links -->
+                                 Dropdown menu links 
                             </div>
                         </div>
                     </div>
@@ -95,16 +139,34 @@
 
             <div class="col-sm-4">
 
-                <form class="form-inline">
-                    <button type="submit" class="btn btn-success btn-lg">GO</button>
-                </form>
+                <button type="submit" class="btn btn-light btn-lg">GO</button>
+
 
             </div>
 
         </div>
-    </div>
-
-
+    </div> -->
+    <!-- 
+    <section class="slideshow">
+            <div class="content"> -->
+    <!-- <h1 class="display-4">WELCOME!</h1> -->
+    <!-- <div class="content-carrousel">
+                    <figure class="shadow"><img src="../public/images/Carousel Images/couple.jpg"></figure>
+                    <figure class="shadow"><img src="../public/images/Carousel Images/ferriswheel.jpg"></figure>
+                    <figure class="shadow"><img src="../public/images/Carousel Images/skyswings.jpg"></figure>
+                    <figure class="shadow"><img src="../public/images/Carousel Images/merrygoround.jpg"></figure>
+                    <figure class="shadow"><img src="../public/images/Carousel Images/ferriswheel2.jpg"></figure>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h6 class="display-6"><button type="button" class="btn btn-primary btn-sm">Sign 
+                            Up</button></h6>
+                    <h6 class="display-6"><br><button type="button" class="btn btn-primary btn-sm">Log In</button>
+                    </h6>
+                </div>
+            </div>
+        </section> -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
 </body>
