@@ -1,14 +1,14 @@
 {
   "development": {
     "username": "root",
-    "password": "password",
+    "password": "Westpoint19!",
     "database": "tradezdb",
     "host": "localhost",
     "dialect": "mysql"
   },
   "test": {
     "username": "root",
-    "password": "root",
+    "password": "Westpoint19!",
     "database": "testdb",
     "host": "localhost",
     "dialect": "mysql",
