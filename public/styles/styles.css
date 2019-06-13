@@ -8,10 +8,22 @@
   line-height: 2.5;
 }
 
-.slider{
-  overflow: hidden;
-  margin-top: 5%;
-  height: 150px;
+body {
+  background-color: #FAC172;
+}
+
+.card{
+  margin: 50px;
+  margin-top: 5px;
+  background-color: #E05C45;
+  color: #FAC172;
+}
+.display-4 {
+  color: #E05C45;
+}
+
+.display-6 {
+  color: #E05C45;
 }
 
 .slider figure img{
@@ -61,6 +73,12 @@
   }
 }
 
+.content-carrousel figure {
+  width: 100%;
+  height: 120px;
+  overflow: hidden;
+  position: absolute;
+  
 .logo{
   width: 45%;
   height: 10%;
@@ -146,6 +164,7 @@ body {
   background-color: #FAC172;
 }
 
+
 .card{
   margin: 50px;
   margin-top: 5px;
@@ -157,6 +176,30 @@ body {
   text-align: center;
 }
 
+.btn-file {
+  position: relative;
+  overflow: hidden;
+}
+.btn-file input[type=file] {
+  position: absolute;
+  top: 0;
+  right: 0;
+  min-width: 100%;
+  min-height: 100%;
+  font-size: 100px;
+  text-align: right;
+  filter: alpha(opacity=0);
+  opacity: 0;
+  outline: none;
+  background: white;
+  cursor: inherit;
+  display: block;
+}
+
+#img-upload{
+  width: 100%;
+}
+
 .display-6 {
   color: white;
   margin-bottom: 5px;
@@ -165,7 +208,7 @@ body {
 }
 
 footer{
-  text-align: center;
+  text-align: center; 
   background-color: black;
   color: #FAC172;
 }
