@@ -23,8 +23,8 @@ module.exports = function(app) {
   }); 
   
   // Load Sign Up/Account Page
-  app.get("/messages", function(req, res) {
-    res.sendFile(path.join(__dirname, "../html/messages.html"));
+  app.get("/message", function(req, res) {
+    res.sendFile(path.join(__dirname, "../html/message.html"));
   });
 
   // Render 404 page for any unmatched routes
