@@ -37,6 +37,13 @@ module.exports = function(app) {
 
 //Create Entry into Database from Account page
 
+//Create Entry into Database from Account page
+// app.post("/api/addtransaction"),
+//   function(req, res) {
+//     db.Transaction.create(req.body).then(function(dbTransaction) {
+//       res.json(dbTransaction);
+//     });
+//   };
 
     // Search
   // app.get("/api/examples", function(req, res) {

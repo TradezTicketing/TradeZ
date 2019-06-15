@@ -8,8 +8,9 @@
   line-height: 2.5;
 }
 
-body {
+body,h1 {
   background-color: #FAC172;
+  font-family: 'Slabo 27px', serif;
 }
 
 .card{
@@ -36,7 +37,7 @@ body {
   width: 500%;
   margin: 0;
   left: 0;
-  animation: 45s slider ease-in-out infinite;
+  animation: 25s slider ease-in-out;
 }
 
 
@@ -78,7 +79,8 @@ body {
   height: 120px;
   overflow: hidden;
   position: absolute;
-  
+}
+
 .logo{
   width: 45%;
   height: 10%;
@@ -160,10 +162,6 @@ body {
   background-color: #FAC172;
 }
 
-@keyframes rotar {
-  from {
-    transform: rotateY(0deg);
-  }
 .jumbotron {
   background-color: #FAC172;
 }
@@ -202,11 +200,19 @@ body {
 
 #img-upload{
   width: 100%;
+}
+
 .display-6 {
   color: white;
   margin-bottom: 5px;
   margin-top: 5px;
   padding: 5px;
+}
+
+footer{
+  text-align: center; 
+  background-color: black;
+  color: #FAC172;
 }
 
 
