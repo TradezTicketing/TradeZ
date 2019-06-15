@@ -1,5 +1,5 @@
 <div class="jumbotron jumbotron-fluid "
-    style="background: url('/images/Carousel Images/merrygoround.jpg'); background-size: cover;">
+    style="background: url('/images/Carousel Images/ferriswheel.jpg'); background-size: cover;">
     {{!-- add the style above to the css stylesheet with a jumbotron class --}}
     <div class="container text-secondary text-dark bg-light">
         <h1>Get it.</h1>
@@ -7,22 +7,22 @@
             See something you like?
         </h3>
         <br>
-        <a class="btn btn-secondary btn-lg" href="#" role="button">How it Works</a>
+        <a class="btn btn-lg" href="#" role="button">How it Works</a>
     </div>
 </div>
 <br>
 
 <div class="col-md-12">
-        <div class="input-group">
-            <form action="/search" method="GET">
+    <div class="input-group">
+        <form action="/search" method="GET">
             <select class="form-control" name="q">
                 {{#each experiences}}
                 <option value="{{this.experience}}">{{this.experience}}</option>
                 {{/each}}
             </select>
             <button class="btn" type="submit">Search</button>
-            </form>
-        </div>
+        </form>
+    </div>
 
     <div class="card">
         <div class="card-body">
@@ -33,35 +33,35 @@
                     I Want..
                 </button>
                 <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-            <a class="dropdown-item" href="#">tickets to a Disney Park!</a>
-            <a class="dropdown-item" href="#">tickets to a Disney Water Park!</a>
-            <a class="dropdown-item" href="#">tickets to a Universal Park!</a>
-            <a class="dropdown-item" href="#">tickets to a Sea World Park!</a>
-            <a class="dropdown-item" href="#">tickets to a Sea World Water Park!</a>
-          </div>
+                    <a class="dropdown-item" href="#">tickets to a Disney Park!</a>
+                    <a class="dropdown-item" href="#">tickets to a Disney Water Park!</a>
+                    <a class="dropdown-item" href="#">tickets to a Universal Park!</a>
+                    <a class="dropdown-item" href="#">tickets to a Sea World Park!</a>
+                    <a class="dropdown-item" href="#">tickets to a Sea World Water Park!</a>
+                </div>
 
-              <div class="col-md-12">
-        <div class="card">
-            <div class="card-header">
-                You have {{matches.length}} match(es)!
-            </div>
-            <div class="card-body">
-                <table>
-                    <thead>
-                        <tr>
-                            <th scope="col"></th>
-                        </tr>
-                    </thead>
+                <div class="col-md-12">
+                    <div class="card">
+                        <div class="card-header">
+                            You have {{matches.length}} match(es)!
+                        </div>
+                        <div class="card-body">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th scope="col"></th>
+                                    </tr>
+                                </thead>
 
-                    <tbody id="results-display">
-                        {{#each matches}}
-                        <tr>
-                            <td scope="row">{{this.experience}}</td>
-                                People who have the tickets you searched will appear here.
-                        </tr>
-                        {{/each}}
-                    </tbody>
-                </table>
-            </div>
-        </div>
-    </div>
+                                <tbody id="results-display">
+                                    {{#each matches}}
+                                    <tr>
+                                        <td scope="row">{{this.experience}}</td>
+                                        People who have the tickets you searched will appear here.
+                                    </tr>
+                                    {{/each}}
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
