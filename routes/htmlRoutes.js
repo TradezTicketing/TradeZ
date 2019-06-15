@@ -9,22 +9,30 @@ module.exports = function(app) {
 
   // Load Sign Up
   app.get("/signup", function(req, res) {
-    res.sendFile(path.join(__dirname, "../html/signup.html"));
+    res.render("signup");
   });
 
-   // Load Account Page in handlebars, we need to pass in the email object here!
-   app.get("/myaccount", function(req, res) {
+  // Load Account Page in handlebars, we need to pass in the email object here!
+  app.get("/myaccount", function(req, res) {
     res.render("myaccount", {});
   });
 
-  // Search
+  // Search - there is not column with 'experience,' though (i.e., tickets)
   app.get("/search", function(req, res) {
-    res.sendFile(path.join(__dirname, "../html/search.html"));
-  }); 
-  
-  // Load Sign Up/Account Page
-  app.get("/message", function(req, res) {
-    res.sendFile(path.join(__dirname, "../html/message.html"));
+    db.Transaction.findAll({
+      attributes: ["experience"],
+      group: ["experience"]
+    }).then(function(experiences) {
+      // db.Transaction.findAll({
+      //   where: { experience: req.query.experience }
+      // }).then(function(matches) {
+        res.render("search", { experiences: experiences});
+    });
+  });
+
+  // Compose message
+  app.get("/messages", function(req, res) {
+    res.render("messages");
   });
 
   // Render 404 page for any unmatched routes
