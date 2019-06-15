@@ -8,8 +8,9 @@
   line-height: 2.5;
 }
 
-body {
+body,h1 {
   background-color: #FAC172;
+  font-family: 'Slabo 27px', serif;
 }
 
 .card{
@@ -78,7 +79,8 @@ body {
   height: 120px;
   overflow: hidden;
   position: absolute;
-  
+}
+
 .logo{
   width: 45%;
   height: 10%;
