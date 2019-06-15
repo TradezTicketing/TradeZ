@@ -23,11 +23,10 @@ module.exports = function(app) {
       attributes: ["experience"],
       group: ["experience"]
     }).then(function(experiences) {
-      db.Transaction.findAll({
-        where: { experience: req.query.experience }
-      }).then(function(matches) {
-        res.render("search", { experiences: experiences, matches: matches });
-      });
+      // db.Transaction.findAll({
+      //   where: { experience: req.query.experience }
+      // }).then(function(matches) {
+        res.render("search", { experiences: experiences});
     });
   });
 
