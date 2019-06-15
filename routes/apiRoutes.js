@@ -13,12 +13,11 @@ module.exports = function(app) {
   });
 
   //Get all existing experiences to list in what i want drop down
-  app.get("/api/experiences"),
-    function(req, res) {
+  app.get("/api/experiences", function(req, res) {
       db.Transactions.findAll({}).then(function(db) {
         res.json(db);
       });
-    };
+    });
 
   // Delete an experience by id
   app.delete("/api/deletetransaction/:id", function(req, res) {
@@ -28,7 +27,15 @@ module.exports = function(app) {
       res.json(dbTransaction);
     });
   });
+
+  app.post("/api/addtransaction", function(req, res) {
+    db.Transaction.create(req.body).then(function(dbTransaction) {
+      res.json(dbTransaction);
+    });
+  });
 };
+
+//Create Entry into Database from Account page
 
 //Create Entry into Database from Account page
 // app.post("/api/addtransaction"),

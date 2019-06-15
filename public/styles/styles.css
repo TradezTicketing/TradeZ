@@ -8,8 +8,9 @@
   line-height: 2.5;
 }
 
-body {
+body{
   background-color: #FAC172;
+  font-family: 'Slabo 27px', serif;
 }
 
 .card{
@@ -17,6 +18,16 @@ body {
   margin-top: 5px;
   background-color: #E05C45;
   color: #FAC172;
+}
+
+.text-secondary{
+  border-radius: 5px; 
+}
+
+.btn-lg {
+  margin: 8px;   
+  background-color: #E05C45;
+  color: white;
 }
 .display-4 {
   color: #E05C45;
@@ -36,7 +47,7 @@ body {
   width: 500%;
   margin: 0;
   left: 0;
-  animation: 45s slider ease-in-out infinite;
+  animation: 25s slider ease-in-out;
 }
 
 
@@ -78,17 +89,23 @@ body {
   height: 120px;
   overflow: hidden;
   position: absolute;
-  
+}
+
 .logo{
-  width: 45%;
+  width: 60%;
   height: 10%;
   border-radius: 10px;
+  background-color: white;
 }
 
 .navbar-brand {
   margin: 0;
   padding: 0;
   height: 20%;
+}
+
+nav{
+  background-color: white;
 }
 
 .option {
@@ -160,10 +177,6 @@ body {
   background-color: #FAC172;
 }
 
-@keyframes rotar {
-  from {
-    transform: rotateY(0deg);
-  }
 .jumbotron {
   background-color: #FAC172;
 }
@@ -202,11 +215,19 @@ body {
 
 #img-upload{
   width: 100%;
+}
+
 .display-6 {
   color: white;
   margin-bottom: 5px;
   margin-top: 5px;
   padding: 5px;
+}
+
+footer{
+  text-align: center; 
+  background-color: black;
+  color: #FAC172;
 }
 
 

@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-    <link rel="icon" type="img/png" href="../public/images/Screen Shot 2019-06-12 at 11.17.26 AM.png" />
+    <link rel="icon" type="img/png" href="../public/images/ticket logo.png" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link href="https://fonts.googleapis.com/css?family=Slabo+27px&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="../public/styles/styles.css">
     <title>TradeZ</title>
 </head>
@@ -13,20 +15,36 @@
 <body>
 
     <nav class="navbar navbar-dark bg-info">
-            <a class="navbar-brand" href="#"><img class="logo" src="../public/images/Screen Shot 2019-06-12 at 11.17.26 AM.png"
-                class="img-responsive logo"></a>
+        <a class="navbar-brand" href="./index.html"><img class="logo"
+                src="../public/images/Screen Shot 2019-06-12 at 11.17.26 AM.png" class="img-responsive logo"></a>
         <div>
-        <button type="submit" class= "btn btn-light btn-sm">Log In/Sign Up</button>
-        <button type="submit" class= "btn btn-light btn-sm"><link rel="stylesheet" href="./search.html">Search</button>
-        <button type="submit" class= "btn btn-light btn-sm"><link rel="stylesheet" href="./signup.html">Account</button>
+            <a href="./signup.html" class="btn btn-light btn-sm" class="w3-bar-item w3-button">Log In/Sign Up</a>
+            <a href="./search.html" class="btn btn-light btn-sm" class="w3-bar-item w3-button">Search</a>
+            <a href="./myaccount.html" class="btn btn-light btn-sm" class="w3-bar-item w3-button">Account</a>
         </div>
     </nav>
 
-    <div class="jumbotron jumbotron-fluid">
-        <div class="container">
-            <h1 class="display-4">Welcome!</h1>
-            <p class="lead">This is a website for...</p>
-            <div class="slider">
+    <div class="container">
+        <div class="row">
+            <div class="col-6">
+                <div class="w3-container w3-center w3-animate-right">
+                    <h1>Welcome!</h1>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="w3-container w3-center w3-animate-right">
+                    <h1>About Us</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- <a href="https://attractionshare.showare.com/"
+                                class="btn btn-success btn-sm active" role="button" aria-pressed="true">AttractionShare</a>  -->
+    </div>
+    </div>
+    <!-- <div class="slider">
                     <figure>
                             <img src="../public/images/Carousel Images/merrygoround.jpg">
                             <img src="../public/images/Carousel Images/couple.jpg">
@@ -35,11 +53,10 @@
                             <img src="../public/images/Carousel Images/ferriswheel2.jpg">
                     </figure>
                 </div>
-    
-                <!-- <a href="https://attractionshare.showare.com/"
+     -->
+    <!-- <a href="https://attractionshare.showare.com/"
                         class="btn btn-success btn-sm active" role="button" aria-pressed="true">AttractionShare</a> -->
-           
-        </div>
+
     </div>
 
     <br><br>
@@ -63,110 +80,87 @@
         }
     </script>
 
-    <div class="card-group">
-        <div class="card">
-
-            <div class="card-body">
-                <a href="/signup"  class="btn btn-dark btn-sm">Get
-                        Started!</a>
-                <h6 class="display-6">CLICK HERE TO LOGIN<button type="button"
-                        class="btn btn-dark btn-sm">Login!</button>
-                </h6>
-                <a href="https://attractionshare.showare.com/" class="btn btn-primary btn-lg active" role="button"
-                    aria-pressed="true">Attractionshare</a>
-            </div>
-        </div>
-    </div>
-    <div class="card">
-
-        <div class="card-body">
-            <h5 class="card-title">What I Want</h5>
-            <p class="card-text">Choose the tickets you want.</p>
-            <div class="btn-group dropright">
-                <button type="button" class="btn btn-light dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
-                    aria-expanded="false">
-                    I Want..
-                </button>
-                <div class="dropdown-menu">
-                    Dropdown menu links
-                </div>
-
-                <div class="col-sm-4">
-                    <button type="submit" class="btn btn-light btn-lg">GO</button>
-                </div>
-
-            </div>
-        </div>
-    </div>
-    <!-- 
     <div class="container">
         <div class="row">
-            <div class="col-sm-4">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">What I Have</h5>
-                        <p class="card-text">Choose the tickets you have to trade.</p>
-                        <div class="btn-group dropright">
-                            <button type="button" class="btn btn-light dropdown-toggle" data-toggle="dropdown"
-                                aria-haspopup="true" aria-expanded="false">
-                                I Have..
-                            </button>
-                            <div class="dropdown-menu">
-                                 Dropdown menu links
-                            </div>
-                        </div>
+            <div class="col-6">
+                <div class="card bg-dark text-white">
+                    <img src="../public/images/Carousel Images/ferriswheel.jpg" class="card-img">
+                    <div class="card-img-overlay">
+                        <h5 class="card-title">You got what I want.</h5>
+                        <p class="card-text">Do you live in Central Florida? Chances are you know somebody who can trade
+                            their theme park tickets for yours! Do you have what they want? Tradesies!</p>
+                        <a class="btn btn-secondary" href="#" role="button">How it Works?</a>
                     </div>
                 </div>
             </div>
+            <div class="col-6">
+                <div id="main-results">
 
-            <div class="col-sm-4">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">What I Want</h5>
-                        <p class="card-text">Choose the tickets you want.</p>
-                        <div class="btn-group dropright">
-                            <button type="button" class="btn btn-light dropdown-toggle" data-toggle="dropdown"
-                                aria-haspopup="true" aria-expanded="false">
-                                I Want..
-                            </button>
-                            <div class="dropdown-menu">
-                                 Dropdown menu links 
-                            </div>
+                    <div class="card">
+                        <div class="card-header">
+                            Choose Tickets
+                        </div>
+                        <div class="card-body">
+                            <form>
+                                <div class="form-group">
+                                    <label for="exampleFormControlSelect1">What I have</label>
+                                    <select class="form-control" id="in-or-out-input">
+                                        <option>Walt Disney World</option>
+                                        <option>Universal Studios</option>
+                                        <option>Sea World</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleFormControlSelect1">What I Want</label>
+                                    <select class="form-control" id="how-much-input">
+                                        <option>Walt Disney World</option>
+                                        <option>Universal Studios</option>
+                                        <option>Sea World</option>
+                                    </select>
+                                </div>
+                            </form>
                         </div>
                     </div>
                 </div>
-            </div>
-
-            <div class="col-sm-4">
-
-                <button type="submit" class="btn btn-light btn-lg">GO</button>
-
 
             </div>
-
         </div>
-    </div> -->
-    <!-- 
-    <section class="slideshow">
-            <div class="content"> -->
-    <!-- <h1 class="display-4">WELCOME!</h1> -->
-    <!-- <div class="content-carrousel">
-                    <figure class="shadow"><img src="../public/images/Carousel Images/couple.jpg"></figure>
-                    <figure class="shadow"><img src="../public/images/Carousel Images/ferriswheel.jpg"></figure>
-                    <figure class="shadow"><img src="../public/images/Carousel Images/skyswings.jpg"></figure>
-                    <figure class="shadow"><img src="../public/images/Carousel Images/merrygoround.jpg"></figure>
-                    <figure class="shadow"><img src="../public/images/Carousel Images/ferriswheel2.jpg"></figure>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-4">
+                <div class="card" style="width: 18rem;">
+                    <img src="../public/images/Carousel Images/skyswings.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Disney </h5>
+                        <p class="card-text">One of the many spectacultar attractions to consider!</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
                 </div>
             </div>
-            <div class="card" style="width: 18rem;">
-                <div class="card-body">
-                    <h6 class="display-6"><button type="button" class="btn btn-primary btn-sm">Sign 
-                            Up</button></h6>
-                    <h6 class="display-6"><br><button type="button" class="btn btn-primary btn-sm">Log In</button>
-                    </h6>
+            <div class="col-4">
+                <div class="card" style="width: 18rem;">
+                    <img src="../public/images/Carousel Images/couple.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Universal</h5>
+                        <p class="card-text">One of the many spectacultar attractions to consider!</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
                 </div>
             </div>
-        </section> -->
+            <div class="col-4">
+                <div class="card" style="width: 18rem;">
+                    <img src="../public/images/Carousel Images/ferriswheel2.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Bush Gardens</h5>
+                        <p class="card-text">One of the many spectacultar attractions to consider!</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
 </body>

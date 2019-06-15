@@ -1,0 +1,121 @@
+<div class="jumbotron jumbotron-fluid "
+  style="background: url('/images/Carousel Images/ferriswheel.jpg'); background-size: cover;">
+  {{!-- add the style above to the css stylesheet with a jumbotron class --}}
+  <div class="container text-secondary text-dark bg-light">
+    <h1>You got what I want.</h1>
+    <h3 class="card-text">
+      Chances are you know somebody who can
+      trade their theme park tickets for yours! Do you have what they want?
+      Tradesies!
+    </h3>
+    <br>
+    <a class="btn btn-lg" href="#" role="button">How it Works</a>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header text-light">
+    Step 1: Who are you?
+  </div>
+  <div class="card-body text-light">
+    <h5 class="card-title">Create Your Account</h5>
+    <p class="card-text"></p>
+
+    <form>
+      <form>
+        <div class="form-row align-items-center">
+          <div class="col-auto">
+            <label class="sr-only" for="inlineFormInput">Name</label>
+            <input type="text" class="form-control mb-2" id="inlineFormInput" placeholder="Jane Doe" />
+          </div>
+          <div class="col-auto">
+            <label class="sr-only" for="inlineFormInputGroup">Username</label>
+            <div class="input-group mb-2">
+              <div class="input-group-prepend">
+                <div class="input-group-text">@</div>
+              </div>
+              <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Username" />
+            </div>
+          </div>
+          <div class="col-auto">
+            <div class="form-check mb-2">
+              <input class="form-check-input" type="checkbox" id="autoSizingCheck" />
+              <label class="form-check-label" for="autoSizingCheck">
+                Remember me
+              </label>
+            </div>
+          </div>
+        </div>
+      </form>
+      <div class="form-group">
+        <label for="exampleInputEmail1">Email Address</label>
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+          placeholder="Enter email" />
+        <small id="emailHelp" class="form-text text-muted-light">We'll never share your email with anyone else.</small>
+      </div>
+      <div class="form-group">
+        <label for="exampleInputPassword1">Create a Password</label>
+        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" />
+      </div>
+      <div class="form-group">
+        <label>Upload Image</label>
+        <div class="input-group">
+          <span class="input-group-btn">
+            <span class="btn btn-light btn-file">
+              <input type="file" id="imgInp" />
+            </span>
+          </span>
+          <input type="text" class="form-control" readonly />
+        </div>
+        <img id="img-upload" />
+      </div>
+    </form>
+  </div>
+</div>
+
+<div class="card text-light">
+  <div class="card-header">
+    Step 2: Where are you?
+  </div>
+  <div class="card-body">
+    <h5 class="card-title">Find tickets in your area!</h5>
+    <p class="card-text"></p>
+
+    <form>
+      <div class="form-group">
+        <label for="inputZip">Your US Zipcode</label>
+        <input type="text" class="form-control" id="inputZip" />
+      </div>
+      <div class="dropdown">
+        <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">
+          How far will you travel?
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <a class="dropdown-item" href="#">5 miles</a>
+          <a class="dropdown-item" href="#">10 miles</a>
+          <a class="dropdown-item" href="#">20 miles</a>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+
+<div class="card text-light">
+  <div class="card-header">
+    Step 3: Terms and Conditions
+  </div>
+  <div class="card-body text-light">
+    <p class="card-text"></p>
+    <div class="card text-light" style="width: 85%;">
+      <div class="card-body">
+        <h3 class="card-text">
+          By listing your tickets, you agree to abide by all park policies and regulations outlined in the respective
+          parks' terms of service.
+        </h3>
+      </div>
+    </div>
+  </div>
+  <button type="submit" class="btn btn-light">Create Account</button>
+</div>
+</div>

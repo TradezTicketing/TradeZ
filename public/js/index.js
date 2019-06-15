@@ -1,8 +1,13 @@
 // Get references to page elements
-var $exampleText = $("#example-text");
-var $exampleDescription = $("#example-description");
-var $submitBtn = $("#submit");
-var $exampleList = $("#example-list");
+var $ownedTixDropdown = $("#own-tix");
+var $wantTixDropdown = $("#wanted-tix");
+var $findMatchButton = $("#find-match-btn");
+//var $exampleList = $("#example-list");
+
+//save ticket type owned and ticket type wanted
+//query db for ticket of type wanted (select * from tickets where type = 'volcano-bay')
+//return results in a new table displayed on the results page
+//messages
 
 // The API object contains methods for each kind of request we'll make
 var API = {
@@ -16,7 +21,7 @@ var API = {
       data: JSON.stringify(example)
     });
   },
-  getExamples: function() {
+  getTicketMatches: function() {
     return $.ajax({
       url: "api/examples",
       type: "GET"
@@ -31,8 +36,8 @@ var API = {
 };
 
 // refreshExamples gets new examples from the db and repopulates the list
-var refreshExamples = function() {
-  API.getExamples().then(function(data) {
+var refreshTicketMatches = function() {
+  API.getTicketMatches().then(function(data) {
     var $examples = data.map(function(example) {
       var $a = $("<a>")
         .text(example.text)
