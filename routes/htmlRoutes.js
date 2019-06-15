@@ -4,7 +4,8 @@ var path = require("path");
 module.exports = function(app) {
   // Load index page
   app.get("/", function(req, res) {
-    res.render("index", {});
+    res.sendFile(path.join(__dirname, "../html/index.html"));
+    // res.render("index", {});
   });
 
   // Load Sign Up
@@ -37,6 +38,6 @@ module.exports = function(app) {
 
   // Render 404 page for any unmatched routes
   app.get("*", function(req, res) {
-    res.render("404");
+    // res.render("404");
   });
 };
