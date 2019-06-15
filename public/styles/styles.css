@@ -8,7 +8,7 @@
   line-height: 2.5;
 }
 
-body,h1 {
+body{
   background-color: #FAC172;
   font-family: 'Slabo 27px', serif;
 }
@@ -18,6 +18,16 @@ body,h1 {
   margin-top: 5px;
   background-color: #E05C45;
   color: #FAC172;
+}
+
+.text-secondary{
+  border-radius: 5px; 
+}
+
+.btn-lg {
+  margin: 8px;   
+  background-color: #E05C45;
+  color: white;
 }
 .display-4 {
   color: #E05C45;
@@ -82,15 +92,20 @@ body,h1 {
 }
 
 .logo{
-  width: 45%;
+  width: 60%;
   height: 10%;
   border-radius: 10px;
+  background-color: white;
 }
 
 .navbar-brand {
   margin: 0;
   padding: 0;
   height: 20%;
+}
+
+nav{
+  background-color: white;
 }
 
 .option {
