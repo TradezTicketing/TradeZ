@@ -19,7 +19,7 @@ module.exports = function(app) {
 
   // Search
   app.get("/search", function(req, res) {
-    res.sendFile(path.join(__dirname, "../html/search.html"));
+    res.render("search");
   }); 
   
   // Load Sign Up/Account Page
