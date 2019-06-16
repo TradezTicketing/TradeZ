@@ -20,7 +20,7 @@
                 <option value="{{this.experience}}">{{this.experience}}</option>
                 {{/each}}
             </select>
-            <button class="btn" type="submit">Search</button>
+            {{!-- <button class="btn" type="submit">Search</button> --}}
         </form>
     </div>
 
@@ -29,15 +29,15 @@
             <h3 class="card-title">Trade me! Choose the tickets you want.</h3>
             <div class="btn-group dropright">
                 <button type="button" class="btn btn-light dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
-                    aria-expanded="false">
+                    aria-expanded="false"><span>Select One</span>
                     I Want..
                 </button>
                 <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                    <a class="dropdown-item" href="#">tickets to a Disney Park!</a>
-                    <a class="dropdown-item" href="#">tickets to a Disney Water Park!</a>
-                    <a class="dropdown-item" href="#">tickets to a Universal Park!</a>
-                    <a class="dropdown-item" href="#">tickets to a Sea World Park!</a>
-                    <a class="dropdown-item" href="#">tickets to a Sea World Water Park!</a>
+                    <button class="dropdown-item ticket-options" type="button">tickets to a Disney Park!</button>
+                    <button class="dropdown-item ticket-options" type="button">tickets to a Disney Water Park!</button>
+                    <button class="dropdown-item ticket-options" type="button">tickets to a Universal Park!</button>
+                    <button class="dropdown-item ticket-options" type="button">tickets to a Sea World Park!</button>
+                    <button class="dropdown-item ticket-options" type="button">tickets to a Sea World Water Park!</button>
                 </div>
 
                 <div class="col-md-12">

@@ -17,19 +17,19 @@ var API = {
         "Content-Type": "application/json"
       },
       type: "POST",
-      url: "api/examples",
+      url: "api/addtransaction",
       data: JSON.stringify(example)
     });
   },
   getTicketMatches: function() {
     return $.ajax({
-      url: "api/examples",
+      url: "api/ticketmatches",
       type: "GET"
     });
   },
   deleteExample: function(id) {
     return $.ajax({
-      url: "api/examples/" + id,
+      url: "api/deletetransaction/:" + id,
       type: "DELETE"
     });
   }
@@ -64,6 +64,10 @@ var refreshTicketMatches = function() {
   });
 };
 
+$(".ticket-options").on("click", function(event){
+  console.log($(this).text());
+  // dropdownVal = $(this).text();
+})
 // handleFormSubmit is called whenever we submit a new example
 // Save the new example to the db and refresh the list
 var handleFormSubmit = function(event) {
