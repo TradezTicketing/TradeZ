@@ -17,19 +17,19 @@ var API = {
         "Content-Type": "application/json"
       },
       type: "POST",
-      url: "api/examples",
+      url: "api/addtransaction",
       data: JSON.stringify(example)
     });
   },
   getTicketMatches: function() {
     return $.ajax({
-      url: "api/examples",
+      url: "api/ticketmatches",
       type: "GET"
     });
   },
   deleteExample: function(id) {
     return $.ajax({
-      url: "api/examples/" + id,
+      url: "api/deletetransaction/:" + id,
       type: "DELETE"
     });
   }

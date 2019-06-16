@@ -12,9 +12,13 @@ module.exports = function(app) {
     });
   });
 
-  //Get all existing experiences to list in what i want drop down
+  //Get all existing entries matching experience parameter
   app.get("/api/experiences", function(req, res) {
-      db.Transactions.findAll({}).then(function(db) {
+      db.Transactions.findAll({
+    where:{
+      experience: req.param.experience
+    }
+      }).then(function(db) {
         res.json(db);
       });
     });
