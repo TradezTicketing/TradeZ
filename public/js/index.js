@@ -65,9 +65,12 @@ var refreshTicketMatches = function() {
 };
 
 $(".ticket-options").on("click", function(event){
-  console.log($(this).text());
-  // dropdownVal = $(this).text();
-})
+  function showImage(){
+    document.getElementById("loadingImage").style.visibility="visible";
+}
+showImage();
+});
+
 // handleFormSubmit is called whenever we submit a new example
 // Save the new example to the db and refresh the list
 var handleFormSubmit = function(event) {

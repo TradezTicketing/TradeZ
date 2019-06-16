@@ -11,7 +11,7 @@
     </div>
 </div>
 <br>
-
+{{!-- 
 <div class="col-md-12">
     <div class="input-group">
         <form action="/search" method="GET">
@@ -20,17 +20,16 @@
                 <option value="{{this.experience}}">{{this.experience}}</option>
                 {{/each}}
             </select>
-            {{!-- <button class="btn" type="submit">Search</button> --}}
+            <button class="btn" type="submit">Search</button>
         </form>
-    </div>
+    </div> --}}
 
     <div class="card">
         <div class="card-body">
             <h3 class="card-title">Trade me! Choose the tickets you want.</h3>
             <div class="btn-group dropright">
                 <button type="button" class="btn btn-light dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
-                    aria-expanded="false"><span>Select One</span>
-                    I Want..
+                    aria-expanded="false"><span>I want...</span>
                 </button>
                 <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                     <button class="dropdown-item ticket-options" type="button">tickets to a Disney Park!</button>
@@ -57,7 +56,8 @@
                                     {{#each matches}}
                                     <tr>
                                         <td scope="row">{{this.experience}}</td>
-                                        People who have the tickets you searched will appear here.
+                                        <input type="button" value="Ajax Button" onclick="showImage();"/>
+    <img id="loadingImage" src="ajax-loader.gif" style="visibility:hidden"/>
                                     </tr>
                                     {{/each}}
                                 </tbody>
