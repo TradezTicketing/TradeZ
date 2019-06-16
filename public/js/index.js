@@ -69,6 +69,7 @@ $(".ticket-options").on("click", function(event){
     document.getElementById("loadingImage").style.visibility="visible";
 }
 showImage();
+event.preventDefault();
 });
 
 // handleFormSubmit is called whenever we submit a new example

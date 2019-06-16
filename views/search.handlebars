@@ -24,44 +24,44 @@
         </form>
     </div> --}}
 
-    <div class="card">
-        <div class="card-body">
-            <h3 class="card-title">Trade me! Choose the tickets you want.</h3>
-            <div class="btn-group dropright">
-                <button type="button" class="btn btn-light dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
-                    aria-expanded="false"><span>I want...</span>
-                </button>
-                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                    <button class="dropdown-item ticket-options" type="button">tickets to a Disney Park!</button>
-                    <button class="dropdown-item ticket-options" type="button">tickets to a Disney Water Park!</button>
-                    <button class="dropdown-item ticket-options" type="button">tickets to a Universal Park!</button>
-                    <button class="dropdown-item ticket-options" type="button">tickets to a Sea World Park!</button>
-                    <button class="dropdown-item ticket-options" type="button">tickets to a Sea World Water Park!</button>
-                </div>
+<div class="card">
+    <div class="card-body">
+        <h3 class="card-title">Trade me! Choose the tickets you want.</h3>
+        <div class="btn-group dropright">
+            <button type="button" class="btn btn-light dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+                aria-expanded="false"><span>I want...</span>
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <button class="dropdown-item ticket-options" type="button">tickets to a Disney Park!</button>
+                <button class="dropdown-item ticket-options" type="button">tickets to a Disney Water Park!</button>
+                <button class="dropdown-item ticket-options" type="button">tickets to a Universal Park!</button>
+                <button class="dropdown-item ticket-options" type="button">tickets to a Sea World Park!</button>
+                <button class="dropdown-item ticket-options" type="button">tickets to a Sea World Water Park!</button>
+            </div>
 
-                <div class="col-md-12">
-                    <div class="card">
-                        <div class="card-header">
-                            You have {{matches.length}} match(es)!
-                        </div>
-                        <div class="card-body">
-                            <table>
-                                <thead>
-                                    <tr>
-                                        <th scope="col"></th>
-                                    </tr>
-                                </thead>
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-header">
+                        You have {{matches.length}} match(es)!
+                    </div>
+                    <div class="card-body">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th scope="col"></th>
+                                </tr>
+                            </thead>
 
-                                <tbody id="results-display">
-                                    {{#each matches}}
-                                    <tr>
-                                        <td scope="row">{{this.experience}}</td>
-                                        <input type="button" value="Ajax Button" onclick="showImage();"/>
-    <img id="loadingImage" src="ajax-loader.gif" style="visibility:hidden"/>
-                                    </tr>
-                                    {{/each}}
-                                </tbody>
-                            </table>
-                        </div>
+                            <tbody id="results-display">
+                                {{#each matches}}
+                                <tr>
+                                    <td scope="row">{{this.experience}}</td>
+                                    <img id="loadingImage" src="../public/images/Table.jpeg"
+                                        style="visibility:hidden" />
+                                </tr>
+                                {{/each}}
+                            </tbody>
+                        </table>
                     </div>
                 </div>
+            </div>
