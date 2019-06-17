@@ -123,14 +123,13 @@ $(document).ready(function(){
   var passwordInput = $("#passwordInput");
 
 //this is the attempt at an onclick to run the getExperineces function (this should take place on the search page)
-  $(document).on("submit",)
-getExperiences();
+  $(".ticket-options").on("submit",getExperiences);
 
 //function to find all experiences in the database
 function getExperiences(){
   $.get("/api/experiences", function(data){
     var rowsToAdd =[];
-    for(var i = 0; i <data.length; i ++){
+    for(var i = 0; i < data.length; i ++){
       rowsToAdd.push(createExperienceRow(data[i]));
     }
     renderExperienceList(rowsToAdd);
