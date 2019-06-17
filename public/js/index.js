@@ -110,3 +110,28 @@ var handleDeleteBtnClick = function() {
 // Add event listeners to the submit and delete buttons
 $submitBtn.on("click", handleFormSubmit);
 $exampleList.on("click", ".delete", handleDeleteBtnClick);
+
+
+
+$(document).ready(function(){
+  var nameInput = $("#name");
+  var usernameInput = $("#username");
+
+  $(document).on("submit",)
+getExperiences();
+
+function getExperinces(){
+  $.get("/api/experiences", function(data){
+    var rowsToAdd =[];
+    for(var i = 0; i <data.length; i ++){
+      rowsToAdd.push(createExperienceRow(data[i]));
+    }
+    renderExperienceList(rowsToAdd);
+    nameInput.val("");
+  })
+}
+
+
+
+
+})
