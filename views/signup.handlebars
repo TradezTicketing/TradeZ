@@ -26,7 +26,7 @@
         <div class="form-row align-items-center">
           <div class="col-auto">
             <label class="sr-only" for="inlineFormInput">Name</label>
-            <input type="text" class="form-control mb-2" id="inlineFormInput" placeholder="Jane Doe" />
+            <input type="text" class="form-control mb-2" id="name" placeholder="Name" />
           </div>
           <div class="col-auto">
             <label class="sr-only" for="inlineFormInputGroup">Username</label>
@@ -34,7 +34,7 @@
               <div class="input-group-prepend">
                 <div class="input-group-text">@</div>
               </div>
-              <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Username" />
+              <input type="text" class="form-control" id="username" placeholder="Username" />
             </div>
           </div>
           <div class="col-auto">
@@ -49,25 +49,13 @@
       </form>
       <div class="form-group">
         <label for="exampleInputEmail1">Email Address</label>
-        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+        <input type="email" class="form-control" id="emailInput" aria-describedby="emailHelp"
           placeholder="Enter email" />
         <small id="emailHelp" class="form-text text-muted-light">We'll never share your email with anyone else.</small>
       </div>
       <div class="form-group">
         <label for="exampleInputPassword1">Create a Password</label>
-        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" />
-      </div>
-      <div class="form-group">
-        <label>Upload Image</label>
-        <div class="input-group">
-          <span class="input-group-btn">
-            <span class="btn btn-light btn-file">
-              <input type="file" id="imgInp" />
-            </span>
-          </span>
-          <input type="text" class="form-control" readonly />
-        </div>
-        <img id="img-upload" />
+        <input type="password" class="form-control" id="passwordInput" placeholder="Password" />
       </div>
     </form>
   </div>
@@ -75,7 +63,7 @@
 
 <div class="card text-light">
   <div class="card-header">
-    Step 2: Where are you?
+    Step 2: What do you have?
   </div>
   <div class="card-body">
     <h5 class="card-title">Find tickets in your area!</h5>
@@ -83,20 +71,22 @@
 
     <form>
       <div class="form-group">
-        <label for="inputZip">Your US Zipcode</label>
-        <input type="text" class="form-control" id="inputZip" />
+        <label for="ticketSelection">Select Which Tickets You Have to Trade:</label>
       </div>
-      <div class="dropdown">
-        <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
-          aria-haspopup="true" aria-expanded="false">
-          How far will you travel?
-        </button>
-        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-          <a class="dropdown-item" href="#">5 miles</a>
-          <a class="dropdown-item" href="#">10 miles</a>
-          <a class="dropdown-item" href="#">20 miles</a>
-        </div>
+
+
+      <div class="container" id = "checkOptions">
+        <input type="checkbox" class="checks" value="Disney">Tickets to a Disney Park<br>
+        <input type="checkbox" class="checks" value="DisneyWTR">Tickets to a Disney Water Park<br><input type="checkbox"
+          class="checks" value="Universal">Tickets to a Universal Park<br><input type="checkbox" class="checks"
+          value="SeaWorld">Tickets to a SeaWorld Park<br><input type="checkbox" class="checks" value="SeaWorldWTR">Tickets to a SeaWorld Water Park<br>
+
       </div>
+
+
+
+
+
     </form>
   </div>
 </div>
@@ -116,6 +106,6 @@
       </div>
     </div>
   </div>
-  <button type="submit" class="btn btn-light">Create Account</button>
+  <button type="submit" class="btn btn-light" id="createEntryButton">Create Account</button>
 </div>
 </div>
